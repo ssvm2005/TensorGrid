@@ -19,7 +19,7 @@ Current Architecture: https://lucid.app/lucidchart/ba846edb-58b3-434c-b591-c7a79
 | Name | Role | Discord ID | GitHub ID |
 |---|---|---|---|
 | Bharadwaaja K | TBD | bharadwaajak | KBdeGaulle1803 |
-| Niharika Trivedi | TBD | | |
+| Niharika Trivedi | TBD | Niharika Trivedi | ntrivedi07 |
 | Kanwar | TBD | bilstic_knight | |
 | Mridula SSV | TBD | mri4587 | ssvm2005 |
 | Baliraja Nemade | TBD | | |
