@@ -22,4 +22,4 @@ Current Architecture: https://lucid.app/lucidchart/ba846edb-58b3-434c-b591-c7a79
 | Niharika Trivedi | TBD | Niharika Trivedi | ntrivedi07 |
 | Kanwar | TBD | bilstic_knight | |
 | Mridula SSV | TBD | mri4587 | ssvm2005 |
-| Baliraja Nemade | TBD | | |
+| Baliraja Nemade | TBD | Baliraja | Baliraja |
