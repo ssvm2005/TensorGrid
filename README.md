@@ -14,6 +14,8 @@ Detailed specifications (will be updated as the project progresses): https://doc
 
 Current Architecture: https://lucid.app/lucidchart/ba846edb-58b3-434c-b591-c7a798755b65/edit?viewport_loc=-1973%2C-327%2C5083%2C2793%2C0_0&invitationId=inv_b51fb640-8af1-4202-b410-1ec97dde80b9
 
+Proposal PPT: https://docs.google.com/presentation/d/1a1IXXkrOlZ-j9vx_w0Zr3Ei6pWDGim3dke10zrRTNSw/edit?usp=sharing
+
 # Team Members:
 | Name | Role | Discord ID | GitHub ID |
 |---|---|---|---|
