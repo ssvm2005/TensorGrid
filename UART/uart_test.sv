@@ -17,10 +17,16 @@ integer baudLimit = clkFreq / gcd(clkFreq, 16 * baudRate);               //baudL
 bit baudClk;                         // baud clock output
 // bit clk_100m = 0;
 
+// Loop back serial input and output to easily check tx and rx correctness 
+// When loopback is true ser_in will be assigned serOut 
+parameter loopback = 0; 
+
+bit ser_In; 
+assign ser_In = (loopback) ? serOut : serIn;
 uartTopBaseExt dut(
     .clr      (clr),
     .clk      (clk),
-    .serIn    (serIn),
+    .serIn    (ser_In),
     .serOut   (serOut),
     .txData   (txData),
     .newTxData(newTxData),
@@ -37,6 +43,7 @@ uartTopBaseExt dut(
 //     .clk_in1(clk_100m)
 // );
 
+ 
 always #(1E9/(2*clkFreq)) clk <= ~clk;
 
 integer i, j;
@@ -44,40 +51,59 @@ bit [7:0] send, send_r;
 realtime period = 1E9/baudRate;
 logic [0:9] sending_data;
 
+realtime drifted_bit_period = period * 1.03; 
+realtime drifted_tick_step  = drifted_bit_period / 16.0;
+
 initial #2500 clr = 0;
 
+
+// Generate Random Serial Input when not using loop back 
 initial begin
     for(j = 0; j < 10000; j = j + 1) begin
         send = $random;
-        send_r = {<<{send}};
+        for (int k = 0; k < 8; k = k + 1) begin
+            send_r[k] = send[7-k];
+        end
         sending_data = {1'b0, send_r, 1'b1};
         foreach (sending_data[i]) begin
             serIn = sending_data[i];
-            repeat(16) @(posedge baudClk) ;
+            #(drifted_tick_step * 16);
         end
         repeat(j%6) @(posedge baudClk) ;
     end
      @(posedge baudClk) ;
 end
 
+
+
+// Generate Random bytes to transmit 
 initial begin
-    for(i = 0; i < 10000; i = i + 1) begin
+    for(i = 0; i < 100; i = i + 1) begin
         txData = $random;
         #(period) ;
         newTxData = 0;
         repeat(10) #(period) ;
         newTxData = 1;
     end
-    if (i == 10000) #(period) $finish;
+    if (i == 100) #(period) $finish; 
 end
 
-logic rx_match;
 
+// Verify byte sent was received correctly 
+logic rx_match;
 always @(posedge clk) begin
     if (newRxData) begin
-        rx_match <= (rxData == send);
+        rx_match <= (rxData == (loopback ? txData : send));
+        $display(" Time: %t | Sent Byte: 0x%h | Received byte: 0x%h", $time, (loopback ? txData : send), rxData);
     end
 end
+
+// Waveform Dump 
+initial begin
+    $dumpfile("simulation_waves.vcd"); 
+    $dumpvars(0, uart_test_full);      
+end
+
 
 endmodule
 

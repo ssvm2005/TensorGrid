@@ -1,0 +1,57 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Fri Jul 10 16:31:32 2026
+[*]
+[dumpfile] "/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/simulation_waves.vcd"
+[dumpfile_mtime] "Fri Jul 10 16:31:09 2026"
+[dumpfile_size] 94970941
+[savefile] "/Users/kanwarpannu/Desktop/TensorGrid/TensorGrid/sim.gtkw"
+[timestart] 0
+[size] 1333 600
+[pos] -1 -1
+*-26.000000 85500000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[markername] AA
+[markername] BB
+[markername] CC
+[markername] DD
+[markername] EE
+[markername] FF
+[markername] GG
+[markername] HH
+[markername] II
+[markername] JJ
+[markername] KK
+[markername] LL
+[markername] MM
+[markername] NN
+[markername] OO
+[markername] PP
+[markername] QQ
+[markername] RR
+[markername] SS
+[markername] TT
+[markername] UU
+[markername] VV
+[markername] WW
+[markername] XX
+[markername] YY
+[markername] ZZ
+[sst_width] 255
+[signals_width] 120
+[sst_expanded] 1
+[sst_vpaned_height] 159
+@28
+uart_test_full.rx_match
+@22
+uart_test_full.txData[7:0]
+uart_test_full.rxData[7:0]
+@28
+uart_test_full.rx_match
+uart_test_full.newRxData
+uart_test_full.newTxData
+uart_test_full.ser_In
+uart_test_full.serIn
+@29
+uart_test_full.serOut
+[pattern_trace] 1
+[pattern_trace] 0
