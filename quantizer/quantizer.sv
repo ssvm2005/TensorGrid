@@ -15,6 +15,7 @@ logic [7:0] shifts;
 logic [7:0] zp_0;
 logic [2:0] target_dtype_0;
 
+    
 always_ff @(posedge i_clk or negedge i_rst_n) begin
     if (!i_rst_n) begin
         scaled_data <= 48'sd0;
