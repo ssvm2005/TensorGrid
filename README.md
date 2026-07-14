@@ -14,6 +14,8 @@ Current Architecture: https://lucid.app/lucidchart/ba846edb-58b3-434c-b591-c7a79
 
 Proposal and schematics PPT: https://docs.google.com/presentation/d/1a1IXXkrOlZ-j9vx_w0Zr3Ei6pWDGim3dke10zrRTNSw/edit?usp=sharing
 
+Progress Tracker: https://calendar.google.com/calendar/u/1?cid=MjQxNzg5ZTk3YmMwNTY5Yzg1M2QwNzMxNmYxNTVkNjIyODYzYTFhNzUxOGJiZjVmMzA0MjZkNjE2ODI3ZmMyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
+
 # Team Members:
 | Name | Role | Discord ID | GitHub ID |
 |---|---|---|---|
