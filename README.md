@@ -17,8 +17,8 @@ Progress Tracker: https://calendar.google.com/calendar/u/1?cid=MjQxNzg5ZTk3YmMwN
 # Team Members:
 | Name | Role | Discord ID | GitHub ID |
 |---|---|---|---|
-| Bharadwaaja K | TBD | bharadwaajak | KBdeGaulle1803 |
-| Niharika Trivedi | TBD | Niharika Trivedi | ntrivedi07 |
-| Kanwar Partap Pannu | TBD | bilstic_knight | Kanwarpartap-Pannu |
-| Mridula SSV | TBD | mri4587 | ssvm2005 |
-| Baliraja Nemade | TBD | Baliraja | Baliraja |
+| Bharadwaaja K | Lead, RTL & FPGA | bharadwaajak | KBdeGaulle1803 |
+| Niharika Trivedi | Verification & Physical Design | Niharika Trivedi | ntrivedi07 |
+| Kanwar Partap Pannu | RTL, Verification & FPGA | bilstic_knight | Kanwarpartap-Pannu |
+| Mridula SSV | Verification & Physical Design | mri4587 | ssvm2005 |
+| Baliraja Nemade | Physical Design | Baliraja | Baliraja |
